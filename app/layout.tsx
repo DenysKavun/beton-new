@@ -29,11 +29,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="uk">
-      <body className={`${jura.className} antialiased bg-white text-zinc-900`}>
-        <div className="flex flex-col items-center min-h-screen w-full">
-          {children}
-        </div>
-      </body>
+      <body className={`${jura.className} bg-white text-zinc-900 antialiased`}>
+  <div className="flex flex-col items-center min-h-screen w-full">
+    {children}
+  </div>
+
+  <Analytics />
+</body>
     </html>
   )
 }
