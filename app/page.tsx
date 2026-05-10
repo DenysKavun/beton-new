@@ -4,7 +4,10 @@ import Gallery from './components/Gallery'
 
 export default function Page() {
   return (
-    <Navbar />
+    <>
+      <Navbar />
+
+      
     <main className="w-full max-w-5xl mx-auto px-6 sm:px-8 md:px-12 py-12">
 <div className="mb-16">
   <Logo />
