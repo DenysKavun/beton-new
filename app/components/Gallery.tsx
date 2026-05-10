@@ -63,11 +63,13 @@ export default function Gallery() {
 
   const categories = ['Всі', 'Укриття та Бомбосховища', 'Реконструкції', 'Будівництво']
 
+  // 1. Сначала вычисляем отфильтрованные проекты
   const filteredProjects =
     filter === 'Всі'
       ? projects
       : projects.filter((p) => p.category === filter)
 
+  // 2. И только потом используем их в useEffect
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!selected) return
@@ -98,7 +100,7 @@ export default function Gallery() {
   return (
     <section className="mt-24">
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900">
           Наші проєкти
         </h2>
         <div className="text-sm text-zinc-400">
@@ -149,11 +151,14 @@ export default function Gallery() {
       {/* FULLSCREEN MODAL */}
       {selected && (
         <div
-          className="fixed inset-0 z-[999] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-300"
+          className="fixed inset-0 z-[999] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={() => setSelected(null)}
         >
           {/* CLOSE BUTTON */}
-          <button className="absolute top-5 right-5 text-white text-4xl leading-none hover:opacity-70 transition">
+          <button 
+            className="absolute top-5 right-5 text-white text-4xl leading-none hover:opacity-70 transition z-[1000]"
+            onClick={() => setSelected(null)}
+          >
             ×
           </button>
 
@@ -185,7 +190,7 @@ export default function Gallery() {
                 const prev = filteredProjects[(currentIndex - 1 + filteredProjects.length) % filteredProjects.length]
                 setSelected(prev)
               }}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-50 text-white text-5xl hover:opacity-70 transition"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-50 text-white text-5xl hover:opacity-70 transition p-4"
             >
               ←
             </button>
@@ -197,7 +202,7 @@ export default function Gallery() {
                 const next = filteredProjects[(currentIndex + 1) % filteredProjects.length]
                 setSelected(next)
               }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-50 text-white text-5xl hover:opacity-70 transition"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-50 text-white text-5xl hover:opacity-70 transition p-4"
             >
               →
             </button>
@@ -209,9 +214,9 @@ export default function Gallery() {
             />
 
             {/* INFO PANEL */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-2xl">
-              <p className="text-zinc-300 text-sm mb-1">{selected.category}</p>
-              <h3 className="text-white text-xl font-semibold">{selected.title}</h3>
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-8 rounded-b-2xl">
+              <p className="text-zinc-400 text-sm mb-1">{selected.category}</p>
+              <h3 className="text-white text-2xl font-semibold">{selected.title}</h3>
             </div>
           </div>
         </div>
