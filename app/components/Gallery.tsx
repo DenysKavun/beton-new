@@ -205,38 +205,90 @@ export default function Gallery() {
 
         {/* IMAGE */}
         <div
-          className="relative max-w-7xl w-full"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <img
-            src={selected.src}
-            alt={selected.alt}
-            className="
-              w-full
-              max-h-[90vh]
-              object-contain
-              rounded-2xl
-              shadow-2xl
-            "
-          />
+  className="relative max-w-7xl w-full"
+  onClick={(e) => e.stopPropagation()}
+>
 
-          {/* INFO */}
-          <div
-            className="
-              absolute bottom-0 left-0 right-0
-              bg-gradient-to-t from-black/80 to-transparent
-              p-6 rounded-b-2xl
-            "
-          >
-            <p className="text-zinc-300 text-sm mb-1">
-              {selected.category}
-            </p>
+  {/* LEFT */}
+  <button
+    onClick={() => {
+      const currentIndex = filteredProjects.findIndex(
+        (p) => p.src === selected.src
+      )
 
-            <h3 className="text-white text-xl font-semibold">
-              {selected.title}
-            </h3>
-          </div>
-        </div>
+      const prev =
+        filteredProjects[
+          (currentIndex - 1 + filteredProjects.length) %
+            filteredProjects.length
+        ]
+
+      setSelected(prev)
+    }}
+    className="
+      absolute left-4 top-1/2 -translate-y-1/2
+      z-50
+      text-white text-5xl
+      hover:opacity-70
+      transition
+    "
+  >
+    ←
+  </button>
+
+  {/* RIGHT */}
+  <button
+    onClick={() => {
+      const currentIndex = filteredProjects.findIndex(
+        (p) => p.src === selected.src
+      )
+
+      const next =
+        filteredProjects[
+          (currentIndex + 1) % filteredProjects.length
+        ]
+
+      setSelected(next)
+    }}
+    className="
+      absolute right-4 top-1/2 -translate-y-1/2
+      z-50
+      text-white text-5xl
+      hover:opacity-70
+      transition
+    "
+  >
+    →
+  </button>
+
+  <img
+    src={selected.src}
+    alt={selected.alt}
+    className="
+      w-full
+      max-h-[90vh]
+      object-contain
+      rounded-2xl
+      shadow-2xl
+    "
+  />
+
+  {/* INFO */}
+  <div
+    className="
+      absolute bottom-0 left-0 right-0
+      bg-gradient-to-t from-black/80 to-transparent
+      p-6 rounded-b-2xl
+    "
+  >
+    <p className="text-zinc-300 text-sm mb-1">
+      {selected.category}
+    </p>
+
+    <h3 className="text-white text-xl font-semibold">
+      {selected.title}
+    </h3>
+  </div>
+</div>
       </div>
     )}
   </section>
