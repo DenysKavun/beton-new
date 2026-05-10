@@ -11,6 +11,7 @@ type Project = {
 
 const projects: Project[] = [
   // Укриття та Бомбосховища
+  { src: '/projects/shelters/shelter10.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №4, Бориспіль' },
   { src: '/projects/shelters/shelter1.webp', alt: 'Бомбосховище 1', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №1, Київ' },
   { src: '/projects/shelters/shelter2.webp', alt: 'Бомбосховище 1', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №1, Київ' },
   { src: '/projects/shelters/shelter3.webp', alt: 'Бомбосховище 1', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №1, Київ' },
@@ -20,7 +21,7 @@ const projects: Project[] = [
   { src: '/projects/shelters/shelter7.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
   { src: '/projects/shelters/shelter8.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
   { src: '/projects/shelters/shelter9.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
-  { src: '/projects/shelters/shelter10.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №4, Бориспіль' },
+  
 
   // Реконструкції
   { src: '/projects/reconstructions/recon1.jpg', alt: 'Реконструкція 1', category: 'Реконструкції', title: 'Реконструкція ТЦ, Одеса' },
