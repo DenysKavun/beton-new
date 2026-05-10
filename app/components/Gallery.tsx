@@ -11,11 +11,15 @@ type Project = {
 
 const projects: Project[] = [
   // Укриття та Бомбосховища
+  { src: '/projects/construction/project1.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Проект монолітної конструкції, Київ' },
   { src: '/projects/shelters/shelter10.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №4, Бориспіль' },
+  { src: '/projects/construction/project3.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Проект монолітної конструкції, Київ' },
   { src: '/projects/shelters/shelter1.webp', alt: 'Бомбосховище 1', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №1, Київ' },
   { src: '/projects/shelters/shelter2.webp', alt: 'Бомбосховище 1', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №1, Київ' },
+  { src: '/projects/construction/project6.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Проект монолітної конструкції, Київ' },
   { src: '/projects/shelters/shelter3.webp', alt: 'Бомбосховище 1', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №1, Київ' },
   { src: '/projects/shelters/shelter4.webp', alt: 'Бомбосховище 2', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №2, Бориспіль' },
+  { src: '/projects/construction/project5.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Проект монолітної конструкції, Київ' },
   { src: '/projects/shelters/shelter5.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
   { src: '/projects/shelters/shelter6.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
   { src: '/projects/shelters/shelter7.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
