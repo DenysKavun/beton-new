@@ -111,6 +111,75 @@ export default function Page() {
       {/* Галерея проектов */}
       <Gallery />
 
+<section className="mt-24">
+  <h2 className="text-2xl font-semibold mb-6">
+    Соціальні мережі
+  </h2>
+
+  <div className="flex flex-wrap gap-4">
+
+    <a
+      href="https://instagram.com/USERNAME"
+      target="_blank"
+      rel="noreferrer noopener"
+      className="px-6 py-4 rounded-2xl border border-zinc-300 hover:bg-zinc-100 transition no-underline"
+    >
+      Instagram
+    </a>
+
+    <a
+      href="https://tiktok.com/@USERNAME"
+      target="_blank"
+      rel="noreferrer noopener"
+      className="px-6 py-4 rounded-2xl border border-zinc-300 hover:bg-zinc-100 transition no-underline"
+    >
+      TikTok
+    </a>
+
+  </div>
+</section>
+
+<section className="mt-24">
+  <h2 className="text-2xl font-semibold mb-8">
+    Реальні об’єкти
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <div className="p-6 rounded-2xl border border-zinc-200">
+      <div className="text-4xl font-bold mb-2">
+        18+
+      </div>
+
+      <p className="text-zinc-600">
+        років практичного досвіду
+      </p>
+    </div>
+
+    <div className="p-6 rounded-2xl border border-zinc-200">
+      <div className="text-4xl font-bold mb-2">
+        100+
+      </div>
+
+      <p className="text-zinc-600">
+        реалізованих об’єктів
+      </p>
+    </div>
+
+    <div className="p-6 rounded-2xl border border-zinc-200">
+      <div className="text-4xl font-bold mb-2">
+        SCAD
+      </div>
+
+      <p className="text-zinc-600">
+        професійні інженерні розрахунки
+      </p>
+    </div>
+
+  </div>
+</section>
+
+      
       {/* FOOTER */}
       <footer className="mt-24 pt-8 border-t border-zinc-200">
         <p className="text-sm text-zinc-400">
