@@ -24,8 +24,19 @@ const projects: Project[] = [
   
 
   // Реконструкції
-  { src: '/projects/reconstructions/recon1.jpg', alt: 'Реконструкція 1', category: 'Реконструкції', title: 'Реконструкція ТЦ, Одеса' },
-  { src: '/projects/reconstructions/recon2.jpg', alt: 'Реконструкція 2', category: 'Реконструкції', title: 'Реконструкція складу, Харків' },
+  { src: '/projects/reconstructions/recon12.webp', alt: 'Реконструкція 1', category: 'Реконструкції', title: 'Реконструкція апарату ВР' },
+  { src: '/projects/reconstructions/recon13.webp', alt: 'Реконструкція 2', category: 'Реконструкції', title: 'Реконструкція апарату ВР' },
+  { src: '/projects/reconstructions/recon1.webp', alt: 'Реконструкція 3', category: 'Реконструкції', title: 'Реконструкція Нова Пошта' },
+  { src: '/projects/reconstructions/recon2.webp', alt: 'Реконструкція 4', category: 'Реконструкції', title: 'Реконструкція будинку, Київ' },
+  { src: '/projects/reconstructions/recon3.webp', alt: 'Реконструкція 4', category: 'Реконструкції', title: 'Реконструкція будинку, Київ' },
+  { src: '/projects/reconstructions/recon4.webp', alt: 'Реконструкція 5', category: 'Реконструкції', title: 'Реконструкція санатроію, Пуща' },
+  { src: '/projects/reconstructions/recon6.webp', alt: 'Реконструкція 6', category: 'Реконструкції', title: 'Реконструкція будинку, Гора' },
+  { src: '/projects/reconstructions/recon7.webp', alt: 'Реконструкція 6', category: 'Реконструкції', title: 'Реконструкція будинку, Гора' },
+  { src: '/projects/reconstructions/recon8.webp', alt: 'Реконструкція 6', category: 'Реконструкції', title: 'Реконструкція будинку, Гора' },
+  { src: '/projects/reconstructions/recon9.webp', alt: 'Реконструкція 6', category: 'Реконструкції', title: 'Реконструкція будинку, Гора' },
+  { src: '/projects/reconstructions/recon10.webp', alt: 'Реконструкція 3', category: 'Реконструкції', title: 'Реконструкція Нова Пошта' },
+  { src: '/projects/reconstructions/recon11.webp', alt: 'Реконструкція 4', category: 'Реконструкції', title: 'Реконструкція будинку, Київ' },
+  
 
   // Будівництво
   { src: '/projects/construction/build1.jpg', alt: 'Будівництво 1', category: 'Будівництво', title: 'Металокаркас заводу, Дніпро' },
