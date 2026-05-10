@@ -12,13 +12,13 @@ export const metadata = {
   description:
     'Проєктування будівельних конструкцій. Метал, залізобетон, SCAD розрахунки, фундаменти, реконструкції. 18+ років досвіду.',
   icons: {
-    // Путь /favicon.ico автоматически ищет файл в папке public
+    // Используем v=2, чтобы окончательно пробить кэш старого фавикона
     icon: [
-      { url: '/favicon.ico?v=1' }, 
-      { url: '/favicon.ico?v=1', sizes: '32x32', type: 'image/x-icon' }
+      { url: '/favicon.ico?v=2' }, 
+      { url: '/favicon.ico?v=2', sizes: '32x32', type: 'image/x-icon' }
     ],
-    shortcut: '/favicon.ico?v=1',
-    apple: '/favicon.ico?v=1', // Для иконок на рабочих столах iPhone
+    shortcut: '/favicon.ico?v=2',
+    apple: '/favicon.ico?v=2',
   },
 }
 
@@ -30,12 +30,13 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <body className={`${jura.className} bg-white text-zinc-900 antialiased`}>
-  <div className="flex flex-col items-center min-h-screen w-full">
-    {children}
-  </div>
-
-  <Analytics />
-</body>
+        <div className="flex flex-col items-center min-h-screen w-full">
+          {children}
+        </div>
+        
+        {/* Аналитика будет собирать данные о посетителях */}
+        <Analytics />
+      </body>
     </html>
   )
 }
