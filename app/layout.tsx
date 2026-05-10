@@ -1,5 +1,6 @@
 import './globals.css'
 import { Jura } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 
 const jura = Jura({
   subsets: ['latin', 'cyrillic'],
@@ -7,9 +8,18 @@ const jura = Jura({
 })
 
 export const metadata = {
-  title: 'Інженер-конструктор | SCAD | КМ КЖ КЗ',
+  title: 'Beton Monster | Інженер-конструктор | SCAD | КМ КЖ КЗ',
   description:
-    'Проєктування будівельних конструкцій. Метал, залізобетон, SCAD розрахунки, фундаменти, реконструкції.',
+    'Проєктування будівельних конструкцій. Метал, залізобетон, SCAD розрахунки, фундаменти, реконструкції. 18+ років досвіду.',
+  icons: {
+    // Используем v=2, чтобы окончательно пробить кэш старого фавикона
+    icon: [
+      { url: '/favicon.ico?v=2' }, 
+      { url: '/favicon.ico?v=2', sizes: '32x32', type: 'image/x-icon' }
+    ],
+    shortcut: '/favicon.ico?v=2',
+    apple: '/favicon.ico?v=2',
+  },
 }
 
 export default function RootLayout({
@@ -19,8 +29,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="uk">
-      <body className={jura.className}>
-        {children}
+      <body className={`${jura.className} bg-white text-zinc-900 antialiased`}>
+        <div className="flex flex-col items-center min-h-screen w-full">
+          {children}
+        </div>
+        
+        {/* Аналитика будет собирать данные о посетителях */}
+        <Analytics />
       </body>
     </html>
   )
