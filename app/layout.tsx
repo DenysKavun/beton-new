@@ -10,6 +10,9 @@ export const metadata = {
   title: 'Інженер-конструктор | SCAD | КМ КЖ КЗ',
   description:
     'Проєктування будівельних конструкцій. Метал, залізобетон, SCAD розрахунки, фундаменти, реконструкції.',
+  icons: {
+    icon: '/favicon.ico', // Путь к файлу в папке public
+  },
 }
 
 export default function RootLayout({
