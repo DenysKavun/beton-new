@@ -70,61 +70,132 @@ export default function Gallery() {
       : projects.filter((p) => p.category === filter)
 
   return (
-    <section className="mt-20">
-      <h2 className="text-3xl font-bold mb-8">Наші проєкти</h2>
+  <section className="mt-24">
+    <div className="flex items-center justify-between mb-8">
+      <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
+        Наші проєкти
+      </h2>
 
-      {/* Категории */}
-      <div className="flex flex-wrap gap-3 mb-8">
-        {categories.map((c) => (
-          <button
-            key={c}
-            onClick={() => setFilter(c)}
-            className={`px-4 py-2 rounded-full border transition ${
-              filter === c
-                ? 'bg-black text-white border-black'
-                : 'bg-white text-zinc-800 border-zinc-300 hover:bg-zinc-100'
-            }`}
-          >
-            {c}
-          </button>
-        ))}
+      <div className="text-sm text-zinc-400">
+        {filteredProjects.length} фото
       </div>
+    </div>
 
-      {/* Галерея */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {filteredProjects.map((p) => (
-          <div key={p.src} className="flex flex-col">
+    {/* FILTERS */}
+    <div className="flex flex-wrap gap-3 mb-10">
+      {categories.map((c) => (
+        <button
+          key={c}
+          onClick={() => setFilter(c)}
+          className={`px-5 py-2.5 rounded-full border text-sm sm:text-base transition-all duration-200 ${
+            filter === c
+              ? 'bg-black text-white border-black'
+              : 'bg-white text-zinc-700 border-zinc-300 hover:bg-zinc-100'
+          }`}
+        >
+          {c}
+        </button>
+      ))}
+    </div>
+
+    {/* GRID */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {filteredProjects.map((p) => (
+        <div
+          key={p.src}
+          className="group cursor-pointer"
+          onClick={() => setSelected(p)}
+        >
+          <div className="overflow-hidden rounded-2xl bg-zinc-100">
             <img
               src={p.src}
               alt={p.alt}
-              className="rounded-xl shadow-lg hover:scale-105 transition-transform cursor-pointer"
-              onClick={() => setSelected(p)}
+              className="
+                w-full
+                h-[260px]
+                object-cover
+                transition-transform
+                duration-500
+                group-hover:scale-105
+              "
             />
-            <p className="mt-2 text-sm sm:text-base text-zinc-700 font-medium">
+          </div>
+
+          <div className="mt-3">
+            <p className="text-sm text-zinc-400 mb-1">
+              {p.category}
+            </p>
+
+            <p className="text-base font-medium text-zinc-800">
               {p.title}
             </p>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
+    </div>
 
-      {/* Модальное окно */}
-      {selected && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4"
-          onClick={() => setSelected(null)}
+    {/* FULLSCREEN MODAL */}
+    {selected && (
+      <div
+        className="
+          fixed inset-0 z-[999]
+          bg-black/90
+          backdrop-blur-sm
+          flex items-center justify-center
+          p-4
+          animate-in fade-in duration-300
+        "
+        onClick={() => setSelected(null)}
+      >
+        {/* CLOSE BUTTON */}
+        <button
+          className="
+            absolute top-5 right-5
+            text-white text-4xl
+            leading-none
+            hover:opacity-70
+            transition
+          "
         >
-          <div className="relative">
-            <img
-              src={selected.src}
-              alt={selected.alt}
-              className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl"
-            />
-            <p className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg sm:text-xl font-medium">
-              {selected.title}
+          ×
+        </button>
+
+        {/* IMAGE */}
+        <div
+          className="relative max-w-7xl w-full"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <img
+            src={selected.src}
+            alt={selected.alt}
+            className="
+              w-full
+              max-h-[90vh]
+              object-contain
+              rounded-2xl
+              shadow-2xl
+            "
+          />
+
+          {/* INFO */}
+          <div
+            className="
+              absolute bottom-0 left-0 right-0
+              bg-gradient-to-t from-black/80 to-transparent
+              p-6 rounded-b-2xl
+            "
+          >
+            <p className="text-zinc-300 text-sm mb-1">
+              {selected.category}
             </p>
+
+            <h3 className="text-white text-xl font-semibold">
+              {selected.title}
+            </h3>
           </div>
         </div>
-      )}
-    </section>
-  )
+      </div>
+    )}
+  </section>
+)
 }
