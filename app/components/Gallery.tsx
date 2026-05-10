@@ -63,6 +63,47 @@ const projects: Project[] = [
 export default function Gallery() {
   const [filter, setFilter] = useState('Всі')
   const [selected, setSelected] = useState<Project | null>(null)
+  useEffect(() => {
+  const handleKeyDown = (e: KeyboardEvent) => {
+    if (!selected) return
+
+    const currentIndex = filteredProjects.findIndex(
+      (p) => p.src === selected.src
+    )
+
+    // ESC
+    if (e.key === 'Escape') {
+      setSelected(null)
+    }
+
+    // →
+    if (e.key === 'ArrowRight') {
+      const next =
+        filteredProjects[
+          (currentIndex + 1) % filteredProjects.length
+        ]
+
+      setSelected(next)
+    }
+
+    // ←
+    if (e.key === 'ArrowLeft') {
+      const prev =
+        filteredProjects[
+          (currentIndex - 1 + filteredProjects.length) %
+            filteredProjects.length
+        ]
+
+      setSelected(prev)
+    }
+  }
+
+  window.addEventListener('keydown', handleKeyDown)
+
+  return () => {
+    window.removeEventListener('keydown', handleKeyDown)
+  }
+}, [selected, filteredProjects])
 
   const categories = ['Всі', 'Укриття та Бомбосховища', 'Реконструкції', 'Будівництво']
 
