@@ -1,7 +1,8 @@
 import Gallery from './components/Gallery'
+
 export default function Page() {
   return (
-    <main className="w-full max-w-5xl mx-auto px-6 py-12">
+    <main className="w-full max-w-5xl mx-auto px-6 sm:px-8 md:px-12 py-12">
 
       {/* HERO */}
       <section className="mb-16">
@@ -21,10 +22,10 @@ export default function Page() {
 
       {/* BUTTONS */}
       <section className="flex flex-wrap gap-4 mb-20">
-
         <a
           href="https://t.me/D_nssssss"
           target="_blank"
+          rel="noreferrer noopener"
           className="px-6 py-4 rounded-2xl border border-zinc-300 hover:bg-zinc-100 transition no-underline text-zinc-900 font-medium"
         >
           Telegram
@@ -40,6 +41,7 @@ export default function Page() {
         <a
           href="https://wa.me/380676059990"
           target="_blank"
+          rel="noreferrer noopener"
           className="px-6 py-4 rounded-2xl border border-zinc-300 hover:bg-zinc-100 transition no-underline text-zinc-900 font-medium"
         >
           WhatsApp
@@ -51,17 +53,12 @@ export default function Page() {
         >
           Обговорити проєкт
         </a>
-
       </section>
 
-      {/* GRID */}
+      {/* GRID INFO */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-14">
-
         <div>
-          <h2 className="text-2xl font-semibold mb-5">
-            Що виконую
-          </h2>
-
+          <h2 className="text-2xl font-semibold mb-5">Що виконую</h2>
           <ul className="space-y-3 text-zinc-700 leading-relaxed">
             <li>• Металеві конструкції (каркаси, балки, ферми)</li>
             <li>• Залізобетонні конструкції (плити, перекриття)</li>
@@ -74,10 +71,7 @@ export default function Page() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-5">
-            Спеціалізація
-          </h2>
-
+          <h2 className="text-2xl font-semibold mb-5">Спеціалізація</h2>
           <ul className="space-y-3 text-zinc-700 leading-relaxed">
             <li>• Оптимізація конструкцій під бюджет</li>
             <li>• Зменшення матеріалоємності</li>
@@ -88,10 +82,7 @@ export default function Page() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-5">
-            Типи об’єктів
-          </h2>
-
+          <h2 className="text-2xl font-semibold mb-5">Типи об’єктів</h2>
           <ul className="space-y-3 text-zinc-700 leading-relaxed">
             <li>• Житлові будинки</li>
             <li>• Промислові будівлі</li>
@@ -104,10 +95,7 @@ export default function Page() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-5">
-            Досвід та ПЗ
-          </h2>
-
+          <h2 className="text-2xl font-semibold mb-5">Досвід та ПЗ</h2>
           <ul className="space-y-3 text-zinc-700 leading-relaxed">
             <li>• 18+ років практики</li>
             <li>• SCAD Office</li>
@@ -118,8 +106,10 @@ export default function Page() {
             <li>• Оперативні правки</li>
           </ul>
         </div>
- <Gallery />
       </section>
+
+      {/* Галерея проектов */}
+      <Gallery />
 
       {/* FOOTER */}
       <footer className="mt-24 pt-8 border-t border-zinc-200">
@@ -127,7 +117,6 @@ export default function Page() {
           © 2025 • Проєктування будівельних конструкцій
         </p>
       </footer>
-
     </main>
   )
 }
