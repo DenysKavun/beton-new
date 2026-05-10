@@ -39,8 +39,19 @@ const projects: Project[] = [
   
 
   // Будівництво
-  { src: '/projects/construction/build1.jpg', alt: 'Будівництво 1', category: 'Будівництво', title: 'Металокаркас заводу, Дніпро' },
-  { src: '/projects/construction/build2.jpg', alt: 'Будівництво 2', category: 'Будівництво', title: 'Будівництво котеджного містечка, Київ' },
+  { src: '/projects/construction/construction1.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+  { src: '/projects/construction/construction2.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+  { src: '/projects/construction/construction3.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+  { src: '/projects/construction/construction4.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+  { src: '/projects/construction/construction5.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+  { src: '/projects/construction/construction6.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+  { src: '/projects/construction/construction7.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+  { src: '/projects/construction/construction8.webp', alt: 'Будівництво 2', category: 'Будівництво', title: 'Житловий будинок, Київ' },
+  { src: '/projects/construction/construction9.webp', alt: 'Будівництво 2', category: 'Будівництво', title: 'Житловий будинок, Київ' },
+  { src: '/projects/construction/construction10.webp', alt: 'Будівництво 3', category: 'Будівництво', title: 'Житловий будинок, Бориспіль' },
+  { src: '/projects/construction/construction11.webp', alt: 'Будівництво 3', category: 'Будівництво', title: 'Житловий будинок, Бориспіль' },
+  { src: '/projects/construction/construction12.webp', alt: 'Будівництво 3', category: 'Будівництво', title: 'Житловий будинок, Бориспіль' },
+  
 ]
 
 export default function Gallery() {
