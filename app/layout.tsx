@@ -7,11 +7,17 @@ const jura = Jura({
 })
 
 export const metadata = {
-  title: 'Інженер-конструктор | SCAD | КМ КЖ КЗ',
+  title: 'Beton Monster | Інженер-конструктор | SCAD | КМ КЖ КЗ',
   description:
-    'Проєктування будівельних конструкцій. Метал, залізобетон, SCAD розрахунки, фундаменти, реконструкції.',
+    'Проєктування будівельних конструкцій. Метал, залізобетон, SCAD розрахунки, фундаменти, реконструкції. 18+ років досвіду.',
   icons: {
-    icon: '/favicon.ico', // Путь к файлу в папке public
+    // Путь /favicon.ico автоматически ищет файл в папке public
+    icon: [
+      { url: '/favicon.ico?v=1' }, 
+      { url: '/favicon.ico?v=1', sizes: '32x32', type: 'image/x-icon' }
+    ],
+    shortcut: '/favicon.ico?v=1',
+    apple: '/favicon.ico?v=1', // Для иконок на рабочих столах iPhone
   },
 }
 
@@ -22,8 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="uk">
-      <body className={jura.className}>
-        {children}
+      <body className={`${jura.className} antialiased bg-white text-zinc-900`}>
+        <div className="flex flex-col items-center min-h-screen w-full">
+          {children}
+        </div>
       </body>
     </html>
   )
