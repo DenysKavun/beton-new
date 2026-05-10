@@ -1,5 +1,6 @@
 import './globals.css'
 import { Jura } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 
 const jura = Jura({
   subsets: ['latin', 'cyrillic'],
