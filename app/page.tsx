@@ -119,7 +119,7 @@ export default function Page() {
   <div className="flex flex-wrap gap-4">
 
     <a
-      href="https://instagram.com/USERNAME"
+      href="https://www.instagram.com/beton.engineer?igsh=MTRrazF5bGNrMmZqNw=="
       target="_blank"
       rel="noreferrer noopener"
       className="px-6 py-4 rounded-2xl border border-zinc-300 hover:bg-zinc-100 transition no-underline"
@@ -128,7 +128,7 @@ export default function Page() {
     </a>
 
     <a
-      href="https://tiktok.com/@USERNAME"
+      href="https://www.tiktok.com/@beton3889?_r=1&_t=ZS-96FGPyMt0uS"
       target="_blank"
       rel="noreferrer noopener"
       className="px-6 py-4 rounded-2xl border border-zinc-300 hover:bg-zinc-100 transition no-underline"
