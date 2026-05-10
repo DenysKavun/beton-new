@@ -1,3 +1,4 @@
+import Gallery from './components/Gallery'
 export default function Page() {
   return (
     <main className="w-full max-w-5xl mx-auto px-6 py-12">
@@ -117,7 +118,7 @@ export default function Page() {
             <li>• Оперативні правки</li>
           </ul>
         </div>
-
+ <Gallery />
       </section>
 
       {/* FOOTER */}
