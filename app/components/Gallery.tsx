@@ -63,13 +63,12 @@ export default function Gallery() {
 
   const categories = ['Всі', 'Укриття та Бомбосховища', 'Реконструкції', 'Будівництво']
 
-  // 1. Сначала вычисляем отфильтрованные проекты
+  // ВАЖНО: Объявляем filteredProjects ПЕРЕД использованием в useEffect
   const filteredProjects =
     filter === 'Всі'
       ? projects
       : projects.filter((p) => p.category === filter)
 
-  // 2. И только потом используем их в useEffect
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!selected) return
@@ -100,7 +99,7 @@ export default function Gallery() {
   return (
     <section className="mt-24">
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900">
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
           Наші проєкти
         </h2>
         <div className="text-sm text-zinc-400">
@@ -108,7 +107,6 @@ export default function Gallery() {
         </div>
       </div>
 
-      {/* FILTERS */}
       <div className="flex flex-wrap gap-3 mb-10">
         {categories.map((c) => (
           <button
@@ -125,7 +123,6 @@ export default function Gallery() {
         ))}
       </div>
 
-      {/* GRID */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {filteredProjects.map((p) => (
           <div
@@ -148,28 +145,25 @@ export default function Gallery() {
         ))}
       </div>
 
-      {/* FULLSCREEN MODAL */}
       {selected && (
         <div
-          className="fixed inset-0 z-[999] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4"
+          className="fixed inset-0 z-[999] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-300"
           onClick={() => setSelected(null)}
         >
-          {/* CLOSE BUTTON */}
           <button 
-            className="absolute top-5 right-5 text-white text-4xl leading-none hover:opacity-70 transition z-[1000]"
             onClick={() => setSelected(null)}
+            className="absolute top-5 right-5 text-white text-4xl leading-none hover:opacity-70 transition z-[1000]"
           >
             ×
           </button>
 
-          {/* WRAPPER */}
           <div
             className="relative max-w-7xl w-full"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* LOGO INSIDE MODAL */}
+            {/* ЛОГОТИП */}
             <div className="absolute top-6 left-6 z-50 pointer-events-none select-none">
-              <div className="flex flex-col uppercase leading-none">
+              <div className="flex flex-col uppercase leading-none text-left">
                 <div className="text-2xl tracking-tighter flex">
                   <span style={{ color: '#ffffff', fontWeight: 700 }}>BE</span>
                   <span style={{ color: '#a0a0a0', fontWeight: 400 }}>TON</span>
@@ -183,26 +177,24 @@ export default function Gallery() {
               </div>
             </div>
 
-            {/* NAVIGATION LEFT */}
             <button
               onClick={() => {
                 const currentIndex = filteredProjects.findIndex((p) => p.src === selected.src)
                 const prev = filteredProjects[(currentIndex - 1 + filteredProjects.length) % filteredProjects.length]
                 setSelected(prev)
               }}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-50 text-white text-5xl hover:opacity-70 transition p-4"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-50 text-white text-5xl hover:opacity-70 transition"
             >
               ←
             </button>
 
-            {/* NAVIGATION RIGHT */}
             <button
               onClick={() => {
                 const currentIndex = filteredProjects.findIndex((p) => p.src === selected.src)
                 const next = filteredProjects[(currentIndex + 1) % filteredProjects.length]
                 setSelected(next)
               }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-50 text-white text-5xl hover:opacity-70 transition p-4"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-50 text-white text-5xl hover:opacity-70 transition"
             >
               →
             </button>
@@ -213,10 +205,9 @@ export default function Gallery() {
               className="w-full max-h-[90vh] object-contain rounded-2xl shadow-2xl"
             />
 
-            {/* INFO PANEL */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-8 rounded-b-2xl">
-              <p className="text-zinc-400 text-sm mb-1">{selected.category}</p>
-              <h3 className="text-white text-2xl font-semibold">{selected.title}</h3>
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-2xl">
+              <p className="text-zinc-300 text-sm mb-1">{selected.category}</p>
+              <h3 className="text-white text-xl font-semibold">{selected.title}</h3>
             </div>
           </div>
         </div>
