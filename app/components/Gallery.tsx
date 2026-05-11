@@ -20,12 +20,12 @@ const projects: Project[] = [
  
   { src: '/projects/construction/project6.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Проект монолітної конструкції, Київ' },
   
-  { src: '/projects/shelters/shelter4.webp', alt: 'Бомбосховище 2', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №2, Бориспіль' },
+  
   { src: '/projects/construction/project5.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Проект монолітної конструкції, Київ' },
   { src: '/projects/shelters/shelter5.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
   { src: '/projects/shelters/shelter6.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
   { src: '/projects/shelters/shelter7.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
-  { src: '/projects/shelters/shelter8.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
+  
   { src: '/projects/shelters/shelter9.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №3, Ірпінь' },
 
   // Реконструкції
@@ -34,27 +34,27 @@ const projects: Project[] = [
   { src: '/projects/reconstructions/recon1.webp', alt: 'Реконструкція 3', category: 'Реконструкції', title: 'Реконструкція Нова Пошта' },
   { src: '/projects/reconstructions/recon2.webp', alt: 'Реконструкція 4', category: 'Реконструкції', title: 'Реконструкція будинку, Київ' },
   { src: '/projects/reconstructions/recon3.webp', alt: 'Реконструкція 4', category: 'Реконструкції', title: 'Реконструкція будинку, Київ' },
-  { src: '/projects/reconstructions/recon4.webp', alt: 'Реконструкція 5', category: 'Реконструкції', title: 'Реконструкція санатроію, Пуща' },
+  
   { src: '/projects/reconstructions/recon6.webp', alt: 'Реконструкція 6', category: 'Реконструкції', title: 'Реконструкція будинку, Гора' },
   { src: '/projects/reconstructions/recon7.webp', alt: 'Реконструкція 6', category: 'Реконструкції', title: 'Реконструкція будинку, Гора' },
   { src: '/projects/reconstructions/recon8.webp', alt: 'Реконструкція 6', category: 'Реконструкції', title: 'Реконструкція будинку, Гора' },
-  { src: '/projects/reconstructions/recon9.webp', alt: 'Реконструкція 6', category: 'Реконструкції', title: 'Реконструкція будинку, Гора' },
+ 
   { src: '/projects/reconstructions/recon10.webp', alt: 'Реконструкція 3', category: 'Реконструкції', title: 'Реконструкція Нова Пошта' },
-  { src: '/projects/reconstructions/recon11.webp', alt: 'Реконструкція 4', category: 'Реконструкції', title: 'Реконструкція будинку, Київ' },
+  
 
   // Будівництво
   { src: '/projects/construction/construction1.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
-  { src: '/projects/construction/construction2.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+  
   { src: '/projects/construction/construction3.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
-  { src: '/projects/construction/construction4.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
-  { src: '/projects/construction/construction5.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+ 
+  
   { src: '/projects/construction/construction6.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
-  { src: '/projects/construction/construction7.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+  
   { src: '/projects/construction/construction8.webp', alt: 'Будівництво 2', category: 'Будівництво', title: 'Житловий будинок, Київ' },
   { src: '/projects/construction/construction9.webp', alt: 'Будівництво 2', category: 'Будівництво', title: 'Житловий будинок, Київ' },
   { src: '/projects/construction/construction10.webp', alt: 'Будівництво 3', category: 'Будівництво', title: 'Житловий будинок, Бориспіль' },
   { src: '/projects/construction/construction11.webp', alt: 'Будівництво 3', category: 'Будівництво', title: 'Житловий будинок, Бориспіль' },
-  { src: '/projects/construction/construction12.webp', alt: 'Будівництво 3', category: 'Будівництво', title: 'Житловий будинок, Бориспіль' },
+  
 ]
 
 export default function Gallery() {
