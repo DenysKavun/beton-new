@@ -45,7 +45,7 @@ const projects: Project[] = [
   // Будівництво
   { src: '/projects/construction/construction1.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
   
-  { src: '/projects/construction/construction3.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
+  
  
   
   { src: '/projects/construction/construction6.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Монолітний каркас, Гора' },
