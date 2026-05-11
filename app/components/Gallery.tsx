@@ -12,6 +12,7 @@ type Project = {
 const projects: Project[] = [
   // Укриття та Бомбосховища
   { src: '/projects/shelters/shelter11.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Бомбосховище №5, Львів' },
+  { src: '/projects/construction/project9.webp', alt: 'Будівництво 4', category: 'Будівництво', title: 'Проект складу зі стальними фермами, Дніпро' },
   { src: '/projects/shelters/shelter12.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Бомбосховище №6, Дніпро' },
   { src: '/projects/construction/project1.webp', alt: 'Будівництво 1', category: 'Будівництво', title: 'Проект монолітної конструкції, Київ' },
   { src: '/projects/shelters/shelter10.webp', alt: 'Бомбосховище 3', category: 'Укриття та Бомбосховища', title: 'Бомбосховище №4, Бориспіль' },
