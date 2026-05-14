@@ -127,7 +127,30 @@ export default function Page() {
           </div>
 
         </section>
+{/* YOUTUBE */}
+<section className="mt-24">
+  <div className="mb-6">
+    <h2 className="text-3xl font-bold tracking-tight mb-2">
+      Відео проєктів та розрахунків
+    </h2>
 
+    <p className="text-zinc-500">
+      Реальні інженерні задачі, проєктування та будівництво
+    </p>
+  </div>
+
+  <div className="overflow-hidden rounded-3xl border border-zinc-200 shadow-xl">
+    <div className="aspect-video">
+      <iframe
+        className="w-full h-full"
+        src="https://www.youtube.com/embed/ejAzA3ADiUw"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  </div>
+</section>
         {/* GALLERY */}
         <Gallery />
 
