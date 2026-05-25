@@ -1,3 +1,4 @@
+import Services from './components/Services'
 import Navbar from './components/Navbar'
 import Gallery from './components/Gallery'
 
