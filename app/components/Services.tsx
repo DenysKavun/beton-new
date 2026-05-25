@@ -10,7 +10,7 @@ export default function Services() {
     },
     {
       title: 'Проєкт металевих конструкцій (КМ)',
-      image: '/services/project_steel',
+      image: '/services/project_steel.webp',
     },
     {
       title: 'Проєкт реконструкцій',
