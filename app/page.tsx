@@ -24,10 +24,12 @@ export default function Page() {
           </p>
 
 <p className="text-base sm:text-lg text-zinc-500">
-            Проектування будівельних конструкцій. Розрахунок металевих та залізобетонних конструкцій (КМ, КЖ)
+            Проектування будівельних конструкцій (КМ, КЖ)
           </p>
 
-
+<p className="text-base sm:text-lg text-zinc-500">
+            Розрахунок металевих та залізобетонних конструкцій
+          </p>
           
         </section>
 
