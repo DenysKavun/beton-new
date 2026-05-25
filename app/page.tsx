@@ -71,6 +71,12 @@ export default function Page() {
 
         </section>
 
+        </section>
+
+<Services />
+
+{/* GRID INFO */}
+
         {/* GRID INFO */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-14">
 
