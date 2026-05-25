@@ -22,6 +22,13 @@ export default function Page() {
           <p className="text-base sm:text-lg text-zinc-500">
             18+ років практичного досвіду у проєктуванні та будівництві
           </p>
+
+<p className="text-base sm:text-lg text-zinc-500">
+            Проектування будівельних конструкцій. Розрахунок металевих та залізобетонних конструкцій (КМ, КЖ)
+          </p>
+
+
+          
         </section>
 
         {/* BUTTONS */}
