@@ -9,11 +9,11 @@ type Shelter = {
 
 const shelters: Shelter[] = [
   {
-    src: '/projects/shelters/shelter1.webp',
+    src: '/projects/shelters/shelter11.webp',
     title: 'Приватне укриття, Київ',
   },
   {
-    src: '/projects/shelters/shelter2.webp',
+    src: '/projects/shelters/shelter9.webp',
     title: 'Монолітне бомбосховище',
   },
   {
