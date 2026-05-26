@@ -17,11 +17,11 @@ const shelters: Shelter[] = [
     title: 'Монолітне бомбосховище',
   },
   {
-    src: '/projects/shelters/shelter3.webp',
+    src: '/projects/shelters/shelter12.webp',
     title: 'Будівництво укриття',
   },
   {
-    src: '/projects/shelters/shelter4.webp',
+    src: '/projects/shelters/shelter10.webp',
     title: 'Підземне сховище',
   },
   {
