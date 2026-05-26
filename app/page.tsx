@@ -157,7 +157,7 @@ export default function Page() {
 
     {/* BACKGROUND IMAGE */}
     <img
-      src="/projects/shelters/shelter1.webp"
+      src="/projects/shelters/shelter11.webp"
       alt="Бомбосховище"
       className="
         absolute inset-0
