@@ -1,3 +1,4 @@
+import ShelterGallery from '../components/ShelterGallery'
 import Navbar from '../components/Navbar'
 
 export default function BombShelterPage() {
