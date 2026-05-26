@@ -29,7 +29,7 @@ const shelters: Shelter[] = [
     title: 'Бетонне укриття',
   },
   {
-    src: '/projects/shelters/shelter6.webp',
+    src: '/projects/shelters/shelter7.webp',
     title: 'Монолітний залізобетон',
   },
 ]
