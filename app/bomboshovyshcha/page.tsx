@@ -316,38 +316,38 @@ export default function BombShelterPage() {
         
 
         {/* CTA */}
-        <section className="text-center">
+        <section className="mt-24 p-10 rounded-3xl bg-black text-white">
 
-          <h2 className="text-4xl font-bold mb-6">
-            Потрібна консультація?
-          </h2>
+  <h2 className="text-3xl font-bold mb-4">
+    Потрібне укриття або бомбосховище?
+  </h2>
 
-          <p className="text-zinc-600 text-lg mb-10 max-w-2xl mx-auto">
-            Надішліть фото ділянки або геологію —
-            допоможемо оцінити можливість будівництва укриття.
-          </p>
+  <p className="text-zinc-300 mb-8 max-w-2xl">
+    Надішліть план ділянки або короткий опис задачі —
+    допоможемо оцінити можливість будівництва та орієнтовний бюджет.
+  </p>
 
-          <div className="flex flex-wrap justify-center gap-4">
+  <div className="flex flex-wrap gap-4">
 
-            <a
-              href="https://t.me/D_nssssss"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="px-8 py-5 rounded-2xl bg-black text-white hover:bg-zinc-800 transition text-lg font-semibold"
-            >
-              Telegram
-            </a>
+    <a
+      href="https://t.me/D_nssssss"
+      target="_blank"
+      rel="noreferrer noopener"
+      className="px-6 py-4 rounded-2xl bg-white text-black font-semibold"
+    >
+      Telegram
+    </a>
 
-            <a
-              href="tel:+380676059990"
-              className="px-8 py-5 rounded-2xl border border-zinc-300 hover:bg-zinc-100 transition text-lg font-semibold"
-            >
-              Зателефонувати
-            </a>
+    <a
+      href="tel:+380676059990"
+      className="px-6 py-4 rounded-2xl border border-zinc-700"
+    >
+      Зателефонувати
+    </a>
 
-          </div>
+  </div>
 
-        </section>
+</section>
 
       </main>
     </>
