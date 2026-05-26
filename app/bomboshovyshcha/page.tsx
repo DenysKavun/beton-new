@@ -53,7 +53,7 @@ export default function BombShelterPage() {
           </p>
 
           <p className="text-zinc-400 text-sm italic">
-            Реальний досвід будівництва укриттів у 2024–2025 роках. Тільки монолітний залізобетон та професійна гідроізоляція.
+            Реальний досвід будівництва укриттів 18 років. Тільки монолітний залізобетон - міцність та захист.
           </p>
         </section>
 
@@ -199,7 +199,7 @@ export default function BombShelterPage() {
             <div className="p-6 rounded-2xl border border-zinc-200">
               <h3 className="font-semibold mb-3 text-lg">Реальний досвід</h3>
               <p className="text-zinc-600">
-                Побудовані та успішно здані приватні укриття та бомбосховища протягом 2024–2025 років.
+                Побудовані та успішно здані приватні укриття та бомбосховища протягом 18 років.
               </p>
             </div>
 
