@@ -9,6 +9,28 @@ export default function BombShelterPage() {
       <main className="w-full max-w-6xl mx-auto px-6 sm:px-8 md:px-12 pt-24 pb-20">
 
         {/* HERO */}
+
+<section className="mb-16">
+
+  <h1 className="text-4xl sm:text-5xl font-bold tracking-tight leading-tight mb-6">
+    Будівництво укриттів та бомбосховищ
+  </h1>
+
+  <p className="text-lg sm:text-xl text-zinc-600 leading-relaxed max-w-3xl mb-4">
+    Проєктування та будівництво приватних і комерційних укриттів:
+    монолітні підземні сховища, захисні приміщення,
+    бетонні конструкції під ключ.
+  </p>
+
+  <p className="text-zinc-500">
+    Реальний досвід будівництва укриттів у 2024–2025 роках
+  </p>
+
+</section>
+
+
+
+        
         <section className="mb-20">
 
           <div className="mb-6 inline-flex px-4 py-2 rounded-full bg-zinc-100 text-zinc-700 text-sm font-medium">
