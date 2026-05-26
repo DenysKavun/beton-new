@@ -36,7 +36,7 @@ export default function BombShelterPage() {
         <section className="mb-24">
 
           <img
-            src="/projects/shelters/shelter1.webp"
+            src="/projects/shelters/shelter10.webp"
             alt="Бомбосховище"
             className="w-full rounded-3xl shadow-2xl"
           />
