@@ -65,6 +65,40 @@ export default function BombShelterPage() {
 
         </section>
 
+<section className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+
+  <div className="p-8 rounded-3xl border border-zinc-200">
+    <h2 className="text-2xl font-semibold mb-4">
+      Що потрібно для початку
+    </h2>
+
+    <ul className="space-y-3 text-zinc-700 leading-relaxed">
+      <li>• Розміри бажаного укриття</li>
+      <li>• Кількість людей</li>
+      <li>• Геологія та рівень ґрунтових вод</li>
+      <li>• Відстань до існуючих будівель</li>
+      <li>• Тип конструкції та бюджет</li>
+    </ul>
+  </div>
+
+  <div className="p-8 rounded-3xl border border-zinc-200">
+    <h2 className="text-2xl font-semibold mb-4">
+      Що ми виконуємо
+    </h2>
+
+    <ul className="space-y-3 text-zinc-700 leading-relaxed">
+      <li>• Проєктування укриття</li>
+      <li>• Розрахунок конструкцій</li>
+      <li>• Монолітні бетонні роботи</li>
+      <li>• Гідроізоляція</li>
+      <li>• Підсилення та захист</li>
+    </ul>
+  </div>
+
+</section>
+
+        
+
         {/* IMPORTANT */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
 
