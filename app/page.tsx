@@ -143,6 +143,81 @@ export default function Page() {
           </div>
 
         </section>
+
+{/* BUNKER CTA */}
+<section className="mt-24">
+
+  <div className="
+    relative overflow-hidden
+    rounded-3xl
+    bg-zinc-900
+    text-white
+    p-8 sm:p-12
+  ">
+
+    {/* BACKGROUND IMAGE */}
+    <img
+      src="/projects/shelters/shelter1.webp"
+      alt="Бомбосховище"
+      className="
+        absolute inset-0
+        w-full h-full
+        object-cover
+        opacity-20
+      "
+    />
+
+    <div className="relative z-10 max-w-3xl">
+
+      <div className="
+        inline-flex
+        px-4 py-2
+        rounded-full
+        bg-white/10
+        backdrop-blur-sm
+        text-sm
+        font-medium
+        mb-6
+      ">
+        Реальні реалізовані об’єкти
+      </div>
+
+      <h2 className="text-3xl sm:text-5xl font-bold leading-tight mb-6">
+        Будівництво <br />
+        Бомбосховищ та Укриттів
+      </h2>
+
+      <p className="text-zinc-300 text-lg leading-relaxed mb-8 max-w-2xl">
+        Монолітні залізобетонні укриття для приватних будинків,
+        котеджів та комерційних об’єктів.
+        Реальні побудовані сховища в Україні.
+      </p>
+
+      <a
+        href="/bomboshovyshcha"
+        className="
+          inline-flex items-center
+          px-8 py-5
+          rounded-2xl
+          bg-white
+          text-black
+          font-semibold
+          hover:bg-zinc-200
+          transition
+        "
+      >
+        Детальніше →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+        
 {/* YOUTUBE */}
 <section className="mt-24">
   <div className="mb-6">
