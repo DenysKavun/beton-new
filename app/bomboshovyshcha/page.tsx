@@ -154,54 +154,16 @@ export default function BombShelterPage() {
 
         </section>
 
-        {/* GALLERY */}
-        <section className="mb-24">
+       {/* GALLERY */}
+<section className="mb-24">
 
-          <h2 className="text-3xl font-bold mb-10">
-            Реальні об’єкти
-          </h2>
+  <h2 className="text-3xl font-bold mb-10">
+    Реальні об’єкти
+  </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <ShelterGallery />
 
-            <img
-              src="/projects/shelters/shelter1.webp"
-              alt=""
-              className="rounded-2xl shadow-lg"
-            />
-
-            <img
-              src="/projects/shelters/shelter2.webp"
-              alt=""
-              className="rounded-2xl shadow-lg"
-            />
-
-            <img
-              src="/projects/shelters/shelter3.webp"
-              alt=""
-              className="rounded-2xl shadow-lg"
-            />
-
-            <img
-              src="/projects/shelters/shelter4.webp"
-              alt=""
-              className="rounded-2xl shadow-lg"
-            />
-
-            <img
-              src="/projects/shelters/shelter5.webp"
-              alt=""
-              className="rounded-2xl shadow-lg"
-            />
-
-            <img
-              src="/projects/shelters/shelter6.webp"
-              alt=""
-              className="rounded-2xl shadow-lg"
-            />
-
-          </div>
-
-        </section>
+</section>
 
         {/* PRICE */}
         <section className="mb-24">
