@@ -270,6 +270,51 @@ export default function BombShelterPage() {
 
         </section>
 
+<section className="mb-20">
+
+  <h2 className="text-3xl font-bold mb-8">
+    Чому замовники звертаються до нас
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <div className="p-6 rounded-2xl border border-zinc-200">
+      <h3 className="font-semibold mb-3">
+        Реальний досвід
+      </h3>
+
+      <p className="text-zinc-600">
+        Побудовані приватні укриття та бомбосховища у 2024–2025 роках
+      </p>
+    </div>
+
+    <div className="p-6 rounded-2xl border border-zinc-200">
+      <h3 className="font-semibold mb-3">
+        Інженерний підхід
+      </h3>
+
+      <p className="text-zinc-600">
+        Розрахунок конструкцій, навантажень та оптимізація бюджету
+      </p>
+    </div>
+
+    <div className="p-6 rounded-2xl border border-zinc-200">
+      <h3 className="font-semibold mb-3">
+        Повний цикл
+      </h3>
+
+      <p className="text-zinc-600">
+        Від ідеї та проєкту до реалізації на будівельному майданчику
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+        
+
         {/* CTA */}
         <section className="text-center">
 
