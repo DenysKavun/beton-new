@@ -62,14 +62,14 @@ export default function Page() {
 
         <Services />
 
-        {/* GRID INFO */}
+       {/* GRID INFO */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
             <h2 className="text-2xl font-semibold mb-5">
               Що виконую
             </h2>
             <ul className="space-y-3 text-zinc-700 leading-relaxed">
-              <li>• Металеві航空 конструкції (каркаси, балки, ферми)</li>
+              <li>• Металеві конструкції (каркаси, балки, ферми)</li>
               <li>• Залізобетонні конструкції (плити, перекриття)</li>
               <li>• SCAD розрахунки просторових систем</li>
               <li>• Фундаменти (плитні, стрічкові, пальові)</li>
@@ -118,7 +118,7 @@ export default function Page() {
               <li>• ArchiCAD</li>
               <li>• BIM / Revit</li>
               <li>• Робота без посередників</li>
-              <li>• Operational оперативні правки</li>
+              <li>• Оперативні правки</li>
             </ul>
           </div>
         </section>
