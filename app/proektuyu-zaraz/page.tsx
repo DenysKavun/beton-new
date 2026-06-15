@@ -30,7 +30,7 @@ export default function ProektuyuZarazPage() {
       </section>
 
       {/* ========================================================================= */}
-      {/* ПРОЄКТ №7 (Найсвіжіший) */}
+      {/* ПРОЄКТ №7 */}
       {/* ========================================================================= */}
       <section className="mb-24">
         <div className="mb-4"><span className="text-sm text-zinc-500">Червень 2026</span></div>
@@ -103,15 +103,15 @@ export default function ProektuyuZarazPage() {
         </div>
       </section>
 
-      {/* ПРОЄКТ №1 */}
+      {/* ПРОЄКТ №1 (Шляхи повністю виправлено) */}
       <section className="mb-24">
         <div className="mb-4"><span className="text-sm text-zinc-500">Лютий 2026</span></div>
         <h2 className="text-3xl font-semibold mb-2">Виробничий комплекс</h2>
         <p className="text-zinc-600 mb-8">КМ • Київська область • завершений</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <img src="public/curent/project1-1.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
-          <img src="public/curent/project1-2.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
-          <img src="public/curent/project1-3.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
+          <img src="/current/project1-1.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
+          <img src="/current/project1-2.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
+          <img src="/current/project1-3.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
         </div>
       </section>
 
