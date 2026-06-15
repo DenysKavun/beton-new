@@ -109,9 +109,9 @@ export default function ProektuyuZarazPage() {
         <h2 className="text-3xl font-semibold mb-2">Виробничий комплекс</h2>
         <p className="text-zinc-600 mb-8">КМ • Київська область • завершений</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <img src="/public/current/project1-1.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
-          <img src="/public/current/project1-2.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
-          <img src="/public/current/project1-3.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
+          <img src="public/curent/project1-1.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
+          <img src="public/curent/project1-2.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
+          <img src="public/curent/project1-3.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
         </div>
       </section>
 
