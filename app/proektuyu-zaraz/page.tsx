@@ -94,8 +94,8 @@ export default function ProektuyuZarazPage() {
       {/* ПРОЄКТ №2 */}
       <section className="mb-24">
         <div className="mb-4"><span className="text-sm text-zinc-500">Травень 2026</span></div>
-        <h2 className="text-3xl font-semibold mb-2">Приватне укриття</h2>
-        <p className="text-zinc-600 mb-8">КЖ • Бориспіль • у роботі</p>
+        <h2 className="text-3xl font-semibold mb-2">Адміністративний будинок Верховної Ради</h2>
+        <p className="text-zinc-600 mb-8">КМ • Київ • завершений</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <img src="/current/project2-1.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
           <img src="/current/project2-2.webp" alt="" className="rounded-2xl border border-zinc-200 w-full object-cover" />
