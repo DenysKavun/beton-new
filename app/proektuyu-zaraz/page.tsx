@@ -35,8 +35,8 @@ const PROJECTS = [
   {
     id: 3,
     date: 'Травень 2026',
-    title: "Назва 3-го об'єкту",
-    tags: 'КЖ • Місто • у роботі',
+    title: "Котедж",
+    tags: 'КЖ • Умань • завершений',
     images: ['/current/project3-1.webp', '/current/project3-2.webp', '/current/project3-3.webp']
   },
   {
