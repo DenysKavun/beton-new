@@ -7,36 +7,36 @@ const PROJECTS = [
   {
     id: 7,
     date: 'Червень 2026',
-    title: "Назва 7-го об'єкту",
-    tags: 'КМ • Місто • у роботі',
+    title: "Виробничий комплекс з ліфтовою шахтою",
+    tags: 'КЖ КМ • Черкаси • у роботі',
     images: ['/current/project7-1.webp', '/current/project7-2.webp', '/current/project7-3.webp']
   },
   {
     id: 6,
     date: 'Червень 2026',
-    title: "Назва 6-го об'єкту",
-    tags: 'КЖ • Місто • у роботі',
+    title: "Реконструкція Готелю в Бухарест Румунія",
+    tags: 'КЖ КД КМ • Бухарест, Румунія • у роботі',
     images: ['/current/project6-1.webp', '/current/project6-2.webp', '/current/project6-3.webp']
   },
   {
     id: 5,
     date: 'Травень 2026',
-    title: "Назва 5-го об'єкту",
-    tags: 'КР • Місто • у роботі',
+    title: "Житловий будинок",
+    tags: 'КЖ КЗ КД • Київ • завершений',
     images: ['/current/project5-1.webp', '/current/project5-2.webp', '/current/project5-3.webp']
   },
   {
     id: 4,
     date: 'Травень 2026',
-    title: "Назва 4-го об'єкту",
-    tags: 'КМ • Місто • у роботі',
+    title: "Житловий будинок",
+    tags: 'КЖ КД • Умань • завершений',
     images: ['/current/project4-1.webp', '/current/project4-2.webp', '/current/project4-3.webp']
   },
   {
     id: 3,
     date: 'Травень 2026',
     title: "Котедж",
-    tags: 'КЖ • Умань • завершений',
+    tags: 'КЖ КД • Умань • завершений',
     images: ['/current/project3-1.webp', '/current/project3-2.webp', '/current/project3-3.webp']
   },
   {
