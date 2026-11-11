@@ -4,6 +4,17 @@ import { useState, useEffect } from 'react'
 
 // Структуровані дані проєктів
 const PROJECTS = [
+{
+    id: 8,
+    date: 'Листопад',
+    title: "Вузол заїзду в гараж",
+    tags: 'КЖ КМ • Київ • у роботі',
+    images: ['/current/project8-1.webp']
+  },
+
+
+
+  
   {
     id: 7,
     date: 'Червень 2026',
