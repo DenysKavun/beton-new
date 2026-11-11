@@ -7,7 +7,7 @@ const PROJECTS = [
 {
     id: 8,
     date: 'Листопад',
-    title: "Вузол заїзду в гараж",
+    title: "Вузол заїзду в гараж. Вузол утеплення дверей",
     tags: 'КЖ КМ • Київ • у роботі',
     images: ['/current/project8-1.webp', '/current/project8-2.webp']
   },
